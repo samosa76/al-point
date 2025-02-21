@@ -1,0 +1,34 @@
+.container_nav {
+    display:  flex;
+    background-color: cornflowerblue;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.logo_nav {
+    margin-left: 32px;
+}
+
+.menu_nav {
+    margin-right: 32px;
+}
+
+.menu_nav > ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu_nav > ul > li {
+    margin-right: 16px;
+}
+
+.menu_nav > ul > li:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.nav_item{
+    color: inherit;
+    text-decoration: none;
+}
