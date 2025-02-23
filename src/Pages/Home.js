@@ -1,9 +1,9 @@
-import Navbar from "../Component/Navbar/Navbar";
+import Menu from "../Component/HomeMenu/Menu";
 
 function Home() {
     return(
         <div>
-            <h1>Home</h1>
+            <Menu />
         </div>
     )
 }

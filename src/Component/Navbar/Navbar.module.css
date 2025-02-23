@@ -1,6 +1,6 @@
 .container_nav {
     display:  flex;
-    background-color: cornflowerblue;
+    background-color: #003049;
     justify-content: space-between;
     align-items: center;
     color: white;
@@ -24,7 +24,7 @@
 }
 
 .menu_nav > ul > li:hover {
-    color: black;
+    color: rgb(197, 197, 197);
     cursor: pointer;
 }
 

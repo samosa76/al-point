@@ -12,17 +12,17 @@ function Navbar() {
                 <ul>
                     <li>
                         <Link to={'/'} className={style.nav_item}>
-                            <h4>Home</h4>
+                            <h3>Home</h3>
                         </Link>
                     </li>
                     <li>
                         <Link to={'/reward'} className={style.nav_item}>
-                            <h4>Reward</h4>
+                            <h3>Reward</h3>
                         </Link>
                     </li>
                     <li>
-                        <Link to={'/violation'} className={style.nav_item}>
-                            <h4>Violation</h4>
+                        <Link to={'/sign-in'} className={style.nav_item}>
+                            <h3>Login</h3>
                         </Link>
                     </li>
                 </ul>
