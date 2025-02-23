@@ -33,6 +33,8 @@
 .btn_menu:hover {
     box-shadow: 1px 8px 20px grey;
     transition: box-shadow .2s ease-in;
+    width: 310px;
+    height: 310px;
 }
 
 .menu_buttons {
