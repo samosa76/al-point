@@ -5,6 +5,7 @@ import Violation from "./Pages/Violation";
 import Reward from "./Pages/Reward";
 import Signin from "./Pages/Signin";
 import Signup from "./Pages/Signup";
+import HomeAdmin from "./Component/Admin/HomeAdmin/HomeAdmin";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/sign-up" element={<Signup />}></Route>
           <Route path="/violation" element={<Violation />}></Route>
           <Route path="/reward" element={<Reward />}></Route>
+          <Route path="/Admin" element={<HomeAdmin />}></Route>
         </Routes>
       </Layout>
     </div>
