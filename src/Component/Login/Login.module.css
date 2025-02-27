@@ -1,0 +1,115 @@
+.container {
+    background-color: #D8EEF5;
+    display: flex;
+    justify-content: center;
+}
+
+/* Left */
+.left {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 640px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0px 0px 0px grey;
+    box-shadow: 0.8rem 0.5rem 8px grey;
+    border-radius: 50px 0px 0px 0px;
+}
+
+.left>p {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0%;
+    margin-bottom: 24px;
+}
+
+.login_input_name {
+    margin-bottom: 8px;
+}
+
+.title {
+    text-align: left;
+    margin-bottom: 1%;
+}
+
+/* Place For Login */
+.placeforname {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgb(196, 196, 196) inset;
+    height: 25px;
+    width: 250px;
+}
+
+.placeforemail {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgb(196, 196, 196) inset;
+    height: 25px;
+    width: 250px;
+}
+
+/* Login Button */
+.button {
+    background-color: #003049;
+    border-radius: 5px;
+    margin-top: 25px;
+    height: 32px;
+    width: 88px;
+}
+
+.button:hover {
+    background-color: #002336;
+}
+
+.button>p {
+    color: white;
+    font-size: 14px;
+    margin: auto;
+}
+
+/* Right */
+.right {
+    background-color: #01283d;
+    height: 640px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 0px grey;
+    box-shadow: 0.5rem 0.5rem 8px grey;
+    border-radius: 0px 0px 50px 0px;
+}
+
+.logo {
+    background-color: white;
+    border-radius: 120px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.logo>img {
+    width: 120px;
+}
+
+/* Title Right */
+.titlejudul>p {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    margin: auto;
+}
+
+.titledesc>p {
+    color: white;
+    font-size: 16px;
+}

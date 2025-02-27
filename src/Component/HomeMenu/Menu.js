@@ -29,9 +29,9 @@ function Menu() {
 
             </div>
 
-            <div className={`${style.menu_about_us} ${style.flex_center}`}>
-                <h1>Title</h1>
-                <h3>Testing lorem ipsum ceritanya </h3>
+            <div className={`${style.menu_about_us} ${style.flex_center} ${style.text_center}`}>
+                <h1>Tentang Kami</h1>
+                <p>Kami merancang website untuk menciptakan lingkungan kepemondokan <br/> yang lebih disiplin, adil, dan termotivasi .Kami percaya bahwa sistem reward <br/>dan pencatatan pelanggaran yang transparan dapat membantu meningkatkan <br/>kedisiplinan serta memberikan apresiasi bagi mereka yang berprestasi.</p>
             </div>
         </div>
     )
