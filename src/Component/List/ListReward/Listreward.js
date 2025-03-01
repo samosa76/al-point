@@ -1,4 +1,4 @@
-
+import style from './Listreward.module.css'
 function Listreward() {
     return (
         <div className={style.container_listreward}>
