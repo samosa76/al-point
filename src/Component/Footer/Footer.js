@@ -24,7 +24,7 @@ function Footer() {
             <div className={style.sosmed}>
 
                 <div className={style.icons}>
-                    <img src='image/icon/fb.png'/>
+                    <img className={style.fb} src='image/icon/fb.png'/>
                     <img src='image/icon/ig.png'/>
                     <img src='image/icon/wa.png'/>
                 </div>
