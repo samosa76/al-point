@@ -11,7 +11,7 @@ function Menu() {
                         <h2 className={style.text}>Reward</h2>
                     </Link>
 
-                    <Link className={`${style.btn_menu} ${style.primary_color} ${style.flex_center}`}>
+                    <Link to={'/list'}className={`${style.btn_menu} ${style.primary_color} ${style.flex_center}`}>
                         <h2 className={style.text}>List</h2>
                     </Link>
                 </div>
