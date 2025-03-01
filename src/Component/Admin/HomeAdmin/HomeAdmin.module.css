@@ -1,4 +1,34 @@
+.admin_container{
+    background-color: #D8EEF5;
+    height: 150px;
+}
 
+.name_title{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.admin_info{
+    width: 100px;
+    border: 5px solid gray;
+    padding: 100px;
+    display: flex;
+}
+
+.button_text{
+    background-color: orange;
+    height: 50px;
+    width: 150px;
+    p{
+        align-items: center;
+        
+    }
+
+    
+}
 
 
 
