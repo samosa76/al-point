@@ -1,4 +1,5 @@
 import style from './Menu.module.css'
+import { Link } from 'react-router-dom';
 
 function Menu() {
     return (
@@ -6,24 +7,24 @@ function Menu() {
             <div className={style.menu_buttons}>
 
                 <div>
-                    <div className={`${style.btn_menu} ${style.orange} ${style.flex_center}`}>
-                        <h2>Reward</h2>
-                    </div>
+                    <Link to={'/reward'} className={`${style.btn_menu} ${style.orange} ${style.flex_center}`}>
+                        <h2 className={style.text}>Reward</h2>
+                    </Link>
 
-                    <div className={`${style.btn_menu} ${style.primary_color} ${style.flex_center}`}>
-                        <h2>List</h2>
-                    </div>
+                    <Link className={`${style.btn_menu} ${style.primary_color} ${style.flex_center}`}>
+                        <h2 className={style.text}>List</h2>
+                    </Link>
                 </div>
 
 
                 <div>
-                    <div className={`${style.btn_menu} ${style.primary_color} ${style.flex_center}`}>
-                        <h2>About Us</h2>
-                    </div>
+                    <Link className={`${style.btn_menu} ${style.primary_color} ${style.flex_center}`}>
+                        <h2 className={style.text}>About Us</h2>
+                    </Link>
 
-                    <div className={`${style.btn_menu} ${style.red} ${style.flex_center}`}>
-                        <h2>Violation</h2>
-                    </div>
+                    <Link className={`${style.btn_menu} ${style.red} ${style.flex_center}`}>
+                        <h2 className={style.text}>Violation</h2>
+                    </Link>
                 </div>
 
 

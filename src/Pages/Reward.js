@@ -1,7 +1,9 @@
+import Rewards from "../Component/Reward/Reward";
+
 function Reward() {
     return(
         <div>
-            <h1>Reward</h1>
+            <Rewards />
         </div>
     )
 }
