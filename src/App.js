@@ -5,9 +5,13 @@ import Violation from "./Pages/Violation";
 import Reward from "./Pages/Reward";
 import Signin from "./Pages/Signin";
 import Signup from "./Pages/Signup";
-import HomeAdmin from "./Admin/Component/HomeAdmin/HomeAdmin";
 import List from "./Pages/List";
 import Listreward from "./Component/List/ListReward/Listreward";
+import Admin from "./Admin/Component/Pages/Admin";
+import InputSiswa from "./Admin/Component/InputSiswa/InputSiswa";
+import InputReward from "./Admin/Component/InputReward/InputReward";
+import InputPelanggaran from "./Admin/Component/InputPelanggaran/InputPelanggaran";
+import ListSantri from "./Admin/Component/ListSantri/ListSantri";
 
 function App() {
   return (
@@ -19,9 +23,13 @@ function App() {
           <Route path="/sign-up" element={<Signup />}></Route>
           <Route path="/violation" element={<Violation />}></Route>
           <Route path="/reward" element={<Reward />}></Route>
-          <Route path="/Admin" element={<HomeAdmin />}></Route>
+          <Route path="/Admin" element={<Admin />}></Route>
           <Route path="/List" element={<List />}></Route>
           <Route path="/Listreward" element={<Listreward/>}></Route>
+          <Route path="/Inputsiswa" element={<InputSiswa />}></Route>
+          <Route path="/Inputreward" element={<InputReward />}></Route>
+          <Route path="/Inputpelanggaran" element={<InputPelanggaran />}></Route>
+          <Route path="/Listsantri" element={<ListSantri />}></Route>
         </Routes>
       </Layout>
     </div>
