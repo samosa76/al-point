@@ -9,14 +9,9 @@ function Menu() {
                     <Link to={'/reward'} className={`${style.btn_menu} ${style.orange} ${style.flex_center}`}>
                         <h2 className={style.text}>Reward</h2>
                     </Link>
-
-<<<<<<< HEAD
-                    <Link className={`${style.btn_menu} ${style.primary_color} ${style.flex_center}`}>
-                        <h2 className={style.text}>List Reward & <br /> Pelanggaran</h2>
-=======
+                    
                     <Link to={'/List'} className={`${style.btn_menu} ${style.primary_color} ${style.flex_center}`}>
                         <h2 className={style.text}>List</h2>
->>>>>>> a2eb65302306b56aeaa470dc59feeffde02045a0
                     </Link>
                 </div>
 
