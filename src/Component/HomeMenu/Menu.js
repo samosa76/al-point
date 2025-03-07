@@ -5,13 +5,12 @@ function Menu() {
     return (
         <div className={`${style.container_home_menu}`}>
             <div className={style.menu_buttons}>
-
                 <div>
                     <Link to={'/reward'} className={`${style.btn_menu} ${style.orange} ${style.flex_center}`}>
                         <h2 className={style.text}>Reward</h2>
                     </Link>
 
-                    <Link to={'/list'}className={`${style.btn_menu} ${style.primary_color} ${style.flex_center}`}>
+                    <Link to={'/List'} className={`${style.btn_menu} ${style.primary_color} ${style.flex_center}`}>
                         <h2 className={style.text}>List</h2>
                     </Link>
                 </div>
@@ -29,10 +28,13 @@ function Menu() {
 
 
             </div>
-
+            <div>
+                    
+                    <img className={style.bacground} src='image/bachground/shapes.png' />
+            </div>
             <div className={`${style.menu_about_us} ${style.flex_center} ${style.text_center}`}>
                 <h1>Tentang Kami</h1>
-                <p>Kami merancang website untuk menciptakan lingkungan kepemondokan <br/> yang lebih disiplin, adil, dan termotivasi .Kami percaya bahwa sistem reward <br/>dan pencatatan pelanggaran yang transparan dapat membantu meningkatkan <br/>kedisiplinan serta memberikan apresiasi bagi mereka yang berprestasi.</p>
+                <p>Kami merancang website untuk menciptakan lingkungan kepemondokan <br /> yang lebih disiplin, adil, dan termotivasi .Kami percaya bahwa sistem reward <br />dan pencatatan pelanggaran yang transparan dapat membantu meningkatkan <br />kedisiplinan serta memberikan apresiasi bagi mereka yang berprestasi.</p>
             </div>
         </div>
     )

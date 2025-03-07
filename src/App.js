@@ -7,7 +7,8 @@ import Signin from "./Pages/Signin";
 import Signup from "./Pages/Signup";
 import HomeAdmin from "./Admin/Component/HomeAdmin/HomeAdmin";
 import List from "./Pages/List";
-import Listreward from "./Component/List/ListReward/Listreward";
+import Listreward from "./Component/ListReward/Listreward";
+import Listviolation from "./Component/ListViolation/Listviolation";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
           <Route path="/reward" element={<Reward />}></Route>
           <Route path="/Admin" element={<HomeAdmin />}></Route>
           <Route path="/List" element={<List />}></Route>
-          <Route path="/Listreward" element={<Listreward/>}></Route>
+          <Route path="/list-reward" element={<Listreward/>}></Route>
+          <Route path="/List-violation" element={<Listviolation/>}></Route>
         </Routes>
       </Layout>
     </div>
