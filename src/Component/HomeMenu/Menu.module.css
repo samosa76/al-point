@@ -56,3 +56,9 @@
     text-align: center;
     text-decoration: none;
 }
+
+.bacground {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
