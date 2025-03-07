@@ -1,20 +1,22 @@
-
 .container_Reward {
     background-color: #ffffff;
     display: flex;
     gap: 18%;
 }
 
-.studens{
+.students {
+    display: flex;
     margin: -32px;
 }
 
-.studen {
+.student {
     background-color: #D8EEF5;
     height: 100px;
     width: 300px;
-    display: flex;
     gap: 24px;
+    display: flex;
+    align-items: center;
+    overflow-y: scroll;
 }
 
 .photo {
@@ -22,9 +24,9 @@
     height: 75px;
     width: 75px;
     border-radius: 75px;
-    display:flex ;
+    margin-left: 20px;
+    border: 1px solid rgb(124, 123, 123);
 }
-
 
 .pages {
     background-color: rgba(247, 128, 0, 0.322);
@@ -41,7 +43,7 @@
     height: 400px;
     width: 400px;
     border-radius: 400px;
-    margin-right: 56%;
+    margin-right: 45%;
     margin-bottom: 16%;
 }
 
@@ -66,4 +68,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
 }

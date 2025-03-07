@@ -1,0 +1,115 @@
+.name_title {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 64px;
+    margin-right: 64px;
+
+    h1 {
+        font-size: 80px;
+    }
+}
+
+.pelanggaran_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+
+.pelanggaran_title {
+    background-color: #D8EEF5;
+    margin-bottom: 32px;
+
+}
+
+.img_title {
+
+    img {
+        height: 183px;
+        width: 183px;
+    }
+}
+
+.content_pelanggaran {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc_content {
+    background-color: #D8EEF5;
+    height: 507px;
+    width: 820px;
+    box-shadow: 0.8rem 0.5rem 8px grey;
+    border-radius: 0px 50px 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        margin-right: 32px;
+    }
+}
+
+.login_input_name {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.input {
+    margin-top: 8%;
+}
+
+.place_id {
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    margin-left: 160px;
+}
+
+.place_name {
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    margin-left: 132px;
+}
+
+.place_pelanggaran {
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    margin-left: 87px;
+}
+
+.place_date {
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    margin-left: 141px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    background-color: #F77F00;
+    width: 130px;
+    height: 38px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.button:hover {
+    background-color: #cf6c02;
+}
+
+.button>p {
+    margin: auto;
+    text-align: center;
+    color: white;
+}

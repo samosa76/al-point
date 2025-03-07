@@ -1,0 +1,40 @@
+.title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #003049;
+    height: 517px;
+    width: 437px;
+    border-radius: 10px;
+}
+
+.profil {
+    background-color: white;
+    height: 198px;
+    width: 198px;
+    border-radius: 198px;
+    margin-bottom: 32px;
+}
+
+.container_text {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 362px;
+    border-radius: 15px;
+}
+
+.text {
+    display: flex;
+}
+
+.text_title {
+    width: 80px;
+    margin-left: 16px;;
+}

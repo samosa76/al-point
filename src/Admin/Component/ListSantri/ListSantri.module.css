@@ -1,0 +1,43 @@
+.title {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 64px;
+    margin-right: 64px;
+    text-align: center;
+}
+
+.slide {
+    display: flex;
+    background-color:  #D9D9D9;;
+    width: 1381px;
+    height: 56px;
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+
+}
+
+.smp_slide {
+    background-color: #80A7FC;
+    width: 690px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.smk_slide {
+    background-color: #439193;
+    width: 690px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.container_li_santri {
+   
+}

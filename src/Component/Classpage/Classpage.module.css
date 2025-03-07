@@ -1,0 +1,62 @@
+.text {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container_opsi {
+    background-color: #003049;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 517px;
+    border-radius: 20px;
+}
+
+.opsies {
+    display: flex;
+    gap: 80px;
+}
+
+.opsi {
+    background-color: #E1CDAC;
+    height: 268px;
+    width: 446px;
+    border-radius: 20px;
+    margin-top: 180px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ellipse {
+    background-color: #003049;
+    height: 180px;
+    width: 180px;
+    margin-top: -332px;
+    rotate: 45deg;
+}
+
+.ellipse>p {
+    rotate: -45deg;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+    margin-left: 168px;
+}
+
+.ellipse2 {
+    background-color: #E1CDAC;
+    height: 160px;
+    width: 160px;
+    border-radius: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ellipse2>p {
+    rotate: -45deg;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+}

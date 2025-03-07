@@ -9,7 +9,7 @@ function Menu() {
                     <Link to={'/reward'} className={`${style.btn_menu} ${style.orange} ${style.flex_center}`}>
                         <h2 className={style.text}>Reward</h2>
                     </Link>
-
+                    
                     <Link to={'/List'} className={`${style.btn_menu} ${style.primary_color} ${style.flex_center}`}>
                         <h2 className={style.text}>List</h2>
                     </Link>
@@ -17,8 +17,8 @@ function Menu() {
 
 
                 <div>
-                    <Link className={`${style.btn_menu} ${style.primary_color} ${style.flex_center}`}>
-                        <h2 className={style.text}>About Us</h2>
+                    <Link to={'/Classpage'}className={`${style.btn_menu} ${style.primary_color} ${style.flex_center}`}>
+                        <h2 className={style.text}>Data Santri</h2>
                     </Link>
 
                     <Link className={`${style.btn_menu} ${style.red} ${style.flex_center}`}>
