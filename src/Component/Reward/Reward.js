@@ -11,9 +11,11 @@ function Rewards() {
 
                 <div className={style.student}>
 
-                    <div className={style.photo}></div>
+                    <div className={style.photo}>
+                    <img src='/image/PhotoSantri/Jibran.jpg' alt='image/jibran'></img>
+                    </div>
                     <div className={style.name}>
-                        <p>Nama Santri</p>
+                        <p>Jibran Amranulhaq</p>
                     </div>
 
                 </div>

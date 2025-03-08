@@ -19,11 +19,21 @@
     overflow-y: scroll;
 }
 
-.photo {
+.photo>img {
     background-color: white;
     height: 75px;
     width: 75px;
     border-radius: 75px;
     margin-left: 20px;
     border: 1px solid rgb(124, 123, 123);
+}
+
+.student:hover {
+    background-color: white;
+    p {
+        color: gray;
+    }
+    img {
+        opacity: 80%;
+    }
 }

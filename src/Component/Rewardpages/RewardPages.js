@@ -25,25 +25,25 @@ function Rewardspages() {
                             <div className={style.text_title}>
                                 <p>Nama</p>
                             </div>
-                            <p>:</p>
+                            <p>: Jibran Amranulhaq</p>
                         </div>
                         <div className={style.text}>
                             <div className={style.text_title}>
                                 <p>Kelas</p>
                             </div>
-                            <p>:</p>
+                            <p>: IV</p>
                         </div>
                         <div className={style.text}>
                             <div className={style.text_title}>
                                 <p>Tanggal Lahir</p>
                             </div>
-                            <p>:</p>
+                            <p>: 29 juni 2008</p>
                         </div>
                         <div className={style.text}>
                             <div className={style.text_title}>
                                 <p>Alamat</p>
                             </div>
-                            <p>:</p>
+                            <p>: Tasikmalaya</p>
                         </div>
 
                         <RewardsContents />
