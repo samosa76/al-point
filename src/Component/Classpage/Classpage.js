@@ -1,6 +1,7 @@
+import MenuClass from '../../MenuClass/MenuClass';
 import style from './Classpage.module.css'
 
-function Classpage() {
+function Classpage({ number }) {
     return (
         <div>
 
@@ -12,18 +13,19 @@ function Classpage() {
             <div className={style.container_opsi}>
 
                 <div className={style.opsies}>
+                    <MenuClass number="1" kelas="SMP" />
+                    <MenuClass number="2" kelas="SMP" />
+                    <MenuClass number="3" kelas="SMP" />
+                </div>
 
-                    <div className={style.opsi}>
+            </div>
 
-                        <div className={style.ellipse}>
-                            <div className={style.ellipse2}>
-                                <p>1</p>
-                            </div>
-                            <p>SMP</p>
-                        </div>
+            <div className={style.container_opsi}>
 
-                    </div>
-
+                <div className={style.opsies}>
+                    <MenuClass number="4" kelas="SMK" />
+                    <MenuClass number="5" kelas="SMK" />
+                    <MenuClass number="6" kelas="SMK" />
                 </div>
 
             </div>

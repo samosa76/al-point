@@ -24,9 +24,9 @@ function Footer() {
             <div className={style.sosmed}>
 
                 <div className={style.icons}>
-                    <img className={style.fb} src='image/icon/fb.png'/>
-                    <img src='image/icon/ig.png'/>
-                    <img src='image/icon/wa.png'/>
+                    <img className={style.fb} src='image/icon/fb.png' alt='icon-fb'/>
+                    <img src='image/icon/ig.png' alt='icon-ig'/>
+                    <img src='image/icon/wa.png' alt='icon-wa'/>
                 </div>
 
                 <div className={style.title2}>
