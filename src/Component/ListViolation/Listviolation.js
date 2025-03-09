@@ -1,4 +1,3 @@
-import RewardLists from '../RewardLists/RewardList';
 import ViolationLists from '../ViolationLists/ViolationLists';
 import style from './Listviolation.module.css'
 

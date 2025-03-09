@@ -6,7 +6,6 @@ import Reward from "./Pages/Reward";
 import Signin from "./Pages/Signin";
 import Signup from "./Pages/Signup";
 import List from "./Pages/List";
-import Listreward from "./Component/List/ListReward/Listreward";
 import Admin from "./Admin/Component/Pages/Admin";
 import InputSiswa from "./Admin/Component/InputSiswa/InputSiswa";
 import InputReward from "./Admin/Component/InputReward/InputReward";
