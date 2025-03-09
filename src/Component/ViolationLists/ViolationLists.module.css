@@ -7,6 +7,7 @@
     background-color: white;
     height: 130px;
     width: 1440px;
+    margin-bottom: 8px;
     gap: 30px;
     box-shadow: 0px 0px 0px grey;
     box-shadow: .8px .9px 3px grey;
@@ -23,7 +24,6 @@
     text-align: center;
     height: 130px;
     width: 100px;
-
 }
 
 .reward {
@@ -37,4 +37,77 @@
     text-align: center;
     height: 130px;
     width: 130px;
+}
+
+.div_hr>hr {
+    display: flex;
+    height: 130px;
+    margin-top: -1px;
+}
+
+@media (max-width: 1220px) {
+    .list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+        height: 110px;
+        width: 1020px;
+    }
+
+    .div_hr>hr {
+        display: flex;
+        height: 110px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 992px) {
+    .list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+        height: 100px;
+        width: 800px;
+    }
+
+    .div_hr>hr {
+        display: flex;
+        height: 100px;
+        margin-top: 8px;
+    }
+
+    .point>p {
+        margin-left: -32px;
+    }
+
+    .btn_text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+    .list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4px;
+        height: 70px;
+        width: 350px;
+    }
+
+    .div_hr>hr {
+        display: flex;
+        height: 70px;
+        margin-top: 8px;
+    }
+
+    .point>p {
+        margin-left: -32px;
+    }
+
+    .btn_text {
+        font-size: 10px;
+    }
 }
