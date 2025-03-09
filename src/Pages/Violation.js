@@ -1,7 +1,7 @@
 function Violation() {
     return(
         <div>
-            <h1>Violation</h1>
+            <Violation />
         </div>
     );
 }

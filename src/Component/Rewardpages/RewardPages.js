@@ -37,7 +37,7 @@ function Rewardspages() {
                             <div className={style.text_title}>
                                 <p>Tanggal Lahir</p>
                             </div>
-                            <p>: 29 juni 2008</p>
+                            <p>: 7 januari 2008</p>
                         </div>
                         <div className={style.text}>
                             <div className={style.text_title}>

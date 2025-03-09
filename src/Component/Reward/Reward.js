@@ -1,4 +1,3 @@
-import RewardsContents from '../RewardContents/RewardContents';
 import Rewardspages from '../Rewardpages/RewardPages';
 import style from './Reward.module.css';
 
@@ -12,7 +11,17 @@ function Rewards() {
                 <div className={style.student}>
 
                     <div className={style.photo}>
-                    <img src='/image/PhotoSantri/Jibran.jpg' alt='image/jibran'></img>
+                        <img src='/image/PhotoSantri/Jibran.jpg' alt='image/jibran'></img>
+                    </div>
+                    <div className={style.name}>
+                        <p>Jibran Amranulhaq</p>
+                    </div>
+
+                </div>
+                <div className={style.student}>
+
+                    <div className={style.photo}>
+                        <img src='/image/PhotoSantri/Jibran.jpg' alt='image/jibran'></img>
                     </div>
                     <div className={style.name}>
                         <p>Jibran Amranulhaq</p>

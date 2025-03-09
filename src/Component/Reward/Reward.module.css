@@ -6,17 +6,19 @@
 
 .students {
     display: flex;
+    flex-direction: column;
     margin: -32px;
+    overflow-y: scroll;
+
 }
 
 .student {
     background-color: #D8EEF5;
     height: 100px;
-    width: 300px;
+    width: 400px;
     gap: 24px;
     display: flex;
     align-items: center;
-    overflow-y: scroll;
 }
 
 .photo>img {
@@ -35,5 +37,16 @@
     }
     img {
         opacity: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .students {
+        width: 500px;
+    }
+
+    .student {
+        height: 100px;
+        width: 500px;
     }
 }
