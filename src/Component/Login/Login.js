@@ -39,7 +39,7 @@ function Login() {
             <div className={style.right}>
 
                 <div className={style.logo}>
-                    <img src='image/icon/alfatih.jpg'/>
+                    <img src='image/icon/alfatih.jpg' alt='icon/alfatih'/>
                 </div>
 
                 <div className={style.titlejudul}>

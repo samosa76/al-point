@@ -9,14 +9,14 @@
 .container_list {
     background-color: rgb(255, 255, 255);
     display: flex;
-    gap: 40px;
+    gap: 50px;
     justify-content: center;
 }
 
 .btn_list {
     color: white;
-    height: 439px;
-    width: 680px;
+    height: 541px;
+    width: 700px;
     border-radius: 30px;
     text-align: center;
     box-shadow: 0px 0px 0px grey;
@@ -32,8 +32,8 @@
 .btn_list:hover {
     box-shadow: 1px 8px 20px grey;
     transition: box-shadow .2s ease-in;
-    width: 685px;
-    height: 444px;
+    height: 546px;
+    width: 705px;
 }
 
 .flex_center {
@@ -51,7 +51,8 @@
     }
 
     .btn_list {
-        height: 439px;
+        height: 543px;
+        width: 560px;
     }
 
     .btn_list>h2 {
@@ -59,8 +60,8 @@
     }
 
     .btn_list:hover {
-        height: 444px;
-        width: 560px;
+        height: 548px;
+        width: 565px;
     }
 }
 
@@ -71,7 +72,8 @@
     }
 
     .btn_list {
-        height: 439px;
+        height: 543px;
+        width: 560px;
     }
 
     .btn_list>h2 {
@@ -79,19 +81,20 @@
     }
 
     .btn_list:hover {
-        height: 444px;
-        width: 560px;
+        height: 548px;
+        width: 565px;
     }
 }
 
 @media (max-width: 500px) {
     .container_list {
         align-items: center;
-        gap: 25px;
+        gap: 30px;
     }
 
     .btn_list {
-        height: 483px;
+        height: 587px;
+        width: 680px;
     }
 
     .btn_list>h2 {
@@ -99,7 +102,7 @@
     }
 
     .btn_list:hover {
-        height: 488px;
-        width: 555px;
+        height: 592px;
+        width: 685px;
     }
 }
