@@ -17,11 +17,11 @@ function Menu() {
 
 
                 <div>
-                    <Link to={'/Classpage'}className={`${style.btn_menu} ${style.primary_color} ${style.flex_center}`}>
+                    <Link to={'/Classpage'} className={`${style.btn_menu} ${style.primary_color} ${style.flex_center}`}>
                         <h2 className={style.text}>Data Santri</h2>
                     </Link>
 
-                    <Link className={`${style.btn_menu} ${style.red} ${style.flex_center}`}>
+                    <Link to={'/Violation'} className={`${style.btn_menu} ${style.red} ${style.flex_center}`}>
                         <h2 className={style.text}>Violation</h2>
                     </Link>
                 </div>
