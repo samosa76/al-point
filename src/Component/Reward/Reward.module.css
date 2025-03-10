@@ -1,13 +1,12 @@
 .container_Reward {
     background-color: #ffffff;
     display: flex;
-    gap: 18%;
+    justify-content: space-between;
 }
 
 .students {
     display: flex;
     flex-direction: column;
-    margin: -32px;
     overflow-y: scroll;
 
 }
