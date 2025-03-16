@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 640px;
+    height: 615px;
     width: 500px;
     text-align: center;
     box-shadow: 0px 0px 0px grey;
@@ -74,7 +74,7 @@
 /* Right */
 .right {
     background-color: #01283d;
-    height: 640px;
+    height: 615px;
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -114,3 +114,145 @@
     font-size: 16px;
 }
 
+@media (max-width: 1220px) {
+    .right {
+        height: 559px;
+        width: 419px;
+    }
+
+    .left {
+        height: 559px;
+        width: 419px;
+    }
+
+    .left>p {
+        font-size: 35px;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+
+    .placeforemail,
+    .placeforname {
+        width: 240px;
+    }
+
+    .logo {
+        height: 90px;
+        width: 90px;
+
+        img {
+            height: 90px;
+            width: 90 px;
+        }
+    }
+
+    .titlejudul>p {
+        font-size: 25px;
+    }
+
+    .titledesc>p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 992px) {
+    .right {
+        height: 559px;
+        width: 400px;
+    }
+
+    .left {
+        height: 559px;
+        width: 400px;
+    }
+
+    .left>p {
+        font-size: 35px;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+
+    .placeforemail,
+    .placeforname {
+        width: 240px;
+    }
+
+    .logo {
+        height: 90px;
+        width: 90px;
+
+        img {
+            height: 90px;
+            width: 90 px;
+        }
+    }
+
+    .titlejudul>p {
+        font-size: 25px;
+    }
+
+    .titledesc>p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+
+    }
+
+    .right {
+        height: 322px;
+        width: 419px;
+        box-shadow: 0px 0px 0px grey;
+        box-shadow: 0.5rem 0.7rem 8px grey;
+        border-radius: 50px 0px 0px 0px;
+    }
+
+    .left {
+        height: 281px;
+        width: 419px;
+        box-shadow: 0px 0px 0px grey;
+        box-shadow: 0.5rem 0.5rem 8px grey;
+        border-radius: 0px 0px 50px 0px;
+    }
+
+    .left>p {
+        font-size: 35px;
+    }
+
+    .title {
+        font-size: 15px;
+    }
+
+    .placeforemail,
+    .placeforname {
+        width: 240px;
+    }
+
+    .logo {
+        height: 90px;
+        width: 90px;
+
+        img {
+            height: 90px;
+            width: 90 px;
+        }
+    }
+
+    .titlejudul>p {
+        font-size: 25px;
+    }
+
+    .titledesc>p {
+        font-size: 12px;
+    }
+}

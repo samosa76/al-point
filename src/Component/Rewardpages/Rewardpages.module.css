@@ -1,0 +1,153 @@
+.container_Reward {
+    background-color: #ffffff;
+    display: flex;
+    gap: 18%;
+}
+
+.pages {
+    background-color: rgba(247, 128, 0, 0.322);
+    height: 680px;
+    width: 990px;
+    border-radius: 20px;
+}
+
+.page {
+    display: flex;
+    margin: 56px;
+    margin-left: 48px;
+
+}
+
+.photoSantri {
+    height: 400px;
+    width: 400px;
+    border-radius: 400px;
+     position: absolute;
+}
+
+
+.photoSantri > img{
+    height: 400px;
+    width: 400px;
+    border-radius: 400px;
+   
+}
+
+.ellipses {
+    background-color: rgba(255, 255, 255, 0);
+    height: 400px;
+    width: 400px;
+    border-radius: 400px;
+    position: relative;
+    margin-right: 16px;
+    animation-name: ellipses;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@keyframes ellipses {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.ellipse {
+    background-color: #7B0C0C;
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+    position: absolute;
+    transform: translate(30%, 30%);
+    animation-name: ellipse;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ellipse {
+    0% {
+        height: 80px;
+        width: 80px;
+    }
+
+    50%{
+        height: 120px;
+        width: 120px;
+        transform: translate(0%, 0%);
+    }
+
+    100% {
+        height: 80px;
+        width: 80px;
+
+    }
+}
+
+.ellipse2 {
+    position: absolute;
+    top: 70%;
+    left: 70%;
+}
+
+.ellipse_2 {
+    background-color: #7B0C0C;
+    height: 120px;
+    width: 120px;
+    border-radius: 120px;
+    animation-name: ellipse_2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ellipse_2 {
+    0% {
+        height: 120px;
+        width: 120px;
+
+    }
+
+    50% {
+        height: 80px;
+        width: 80px;
+        transform: translate(30%, 30%);
+    }
+
+    100% {
+        height: 120px;
+        width: 120px;
+
+    }
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: start;
+    margin-left: 56px;
+
+}
+
+.container_text {
+    display: flex;
+    flex-direction: column;
+    width: 362px;
+    border-radius: 15px;
+    margin-top: 32px;
+    margin-left: 16px;
+}
+
+.text {
+    display: flex;
+    margin-bottom: -10px;
+}
+
+.text_title {
+    width: 100px;
+    margin-left: 16px;
+    ;
+}

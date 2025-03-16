@@ -2,7 +2,7 @@
     background-color: #D8EEF5;
     display: flex;
     justify-content: center;
-    height: 600px;
+    height: 700px;
 }
 
 .title {
@@ -14,5 +14,52 @@
 
 .RewardLists {
     display: flex;
+    align-items: center;
     flex-direction: column;
+}
+
+@media (max-width: 1220px) {
+    .container_listreward {
+        height: 765px;
+    }
+
+    .hr_div>hr {
+        width: 1080px;
+    }
+
+    .title>h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container_listreward {
+        height: 550px;
+    }
+
+    .hr_div>hr {
+        width: 860px;
+    }
+
+    .title>h1 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container_listreward {
+        height: 594px;
+    }
+
+    .hr_div>hr {
+        width: 390px;
+    }
+
+    .title {
+        margin-top: -8px;
+    }
+
+    .title>h1 {
+        font-size: 30px;
+    }
 }

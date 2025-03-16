@@ -1,69 +1,52 @@
-
 .container_Reward {
     background-color: #ffffff;
     display: flex;
     gap: 18%;
 }
 
-.studens{
+.students {
+    display: flex;
+    flex-direction: column;
     margin: -32px;
+    overflow-y: scroll;
+
 }
 
-.studen {
+.student {
     background-color: #D8EEF5;
     height: 100px;
-    width: 300px;
-    display: flex;
+    width: 400px;
     gap: 24px;
+    display: flex;
+    align-items: center;
 }
 
-.photo {
+.photo>img {
     background-color: white;
     height: 75px;
     width: 75px;
     border-radius: 75px;
-    display:flex ;
+    margin-left: 20px;
+    border: 1px solid rgb(124, 123, 123);
 }
 
-
-.pages {
-    background-color: rgba(247, 128, 0, 0.322);
-    height: 600px;
-    width: 990px;
-    display: flex;
-    justify-content: right;
-    align-items: end;
-    border-radius: 20px;
+.student:hover {
+    background-color: white;
+    p {
+        color: gray;
+    }
+    img {
+        opacity: 80%;
+    }
 }
 
-.ellipses {
-    background-color: rgb(255, 255, 255);
-    height: 400px;
-    width: 400px;
-    border-radius: 400px;
-    margin-right: 56%;
-    margin-bottom: 16%;
-}
+@media (max-width: 500px) {
+    .students {
+        width: 500px;
+    }
 
-.ellipse {
-    background-color: #7B0C0C;
-    height: 80px;
-    width: 80px;
-    border-radius: 80px;
-}
-
-.ellipse2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.ellipse_2 {
-    background-color: #7B0C0C;
-    height: 120px;
-    width: 120px;
-    border-radius: 120px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    .student {
+        height: 100px;
+        width: 500px;
+    }
 }

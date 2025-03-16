@@ -49,7 +49,6 @@ function InputSiswa() {
 
                         <input type="submit" className={style.button}></input>
 
-
                     </form>
 
 
