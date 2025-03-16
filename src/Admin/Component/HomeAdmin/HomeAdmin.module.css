@@ -1,18 +1,13 @@
-.admin_container {
-    
-
-}
-
 .name_title {
     align-items: center;
     justify-content: center;
     display: flex;
     margin-left: 32px;
     margin-right: 32px;
-    
+
 }
 
-.admin_title{
+.admin_title {
     background-color: #D8EEF5;
     margin-bottom: 60px;
 }
@@ -31,9 +26,8 @@
     text-align: center;
     align-items: center;
     padding: 64px;
-    margin-left: 32px;
-    
-    p{
+
+    p {
         font-family: poppins;
     }
 
@@ -48,10 +42,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    p{
-        font-size: 11;
-    }
 }
 
 .img_title {
@@ -73,6 +63,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     img {
         height: 160px;
         width: 160px;
@@ -84,4 +75,115 @@
     background-color: white;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 1220px) {
+    .name_title>h1 {
+        font-size: 55px;
+    }
+
+    .admin_title {
+        margin-bottom: 32px;
+    }
+
+    .admin_info {
+        padding: 16px;
+    }
+
+    .desc_text {
+        img {
+            height: 150px;
+            width: 150px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .info {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .name_title>h1 {
+        font-size: 45px;
+        margin-left: -32px;
+    }
+
+    .admin_title {
+        margin-bottom: 32px;
+    }
+
+    .admin_info {
+        padding: 8px;
+    }
+
+    .desc_text {
+        img {
+            height: 130px;
+            width: 130px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+    }
+
+    .info {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    .admin_title {
+        height: 250px;
+    }
+
+    .name_title {
+        h1 {
+            font-size: 20px;
+            margin-left: -32px;
+        }
+    }
+
+    .img_title {
+        img {
+            height: 103px;
+            width: 171px;
+        }
+    }
+
+    .admin_title {
+        margin-bottom: 32px;
+    }
+
+    .admin_info {
+        height: 190px;
+        width: 85px;
+        padding: -8px;
+    }
+
+    .desc_text {
+        img {
+            height: 60px;
+            width: 60px;
+        }
+
+        p {
+            font-size: 8px;
+        }
+    }
+
+    .info {
+        gap: 8px;
+    }
+
+    .button_text {
+        height: 20px;
+        width: 80px;
+        border-radius: 5px;
+    }
 }

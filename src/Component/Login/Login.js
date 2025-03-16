@@ -15,7 +15,7 @@ function Login() {
                             <label for="Username">Username</label>
                         </div>
 
-                        <input className={style.placeforname} type="text" placeholder="enter username" />
+                        <input className={style.placeforname} type="text" />
 
                     </div>
 
@@ -25,7 +25,7 @@ function Login() {
                             <label for="e-mail">E-mail</label>
                         </div>
 
-                        <input className={style.placeforemail} type="text" placeholder="enter e-mail" />
+                        <input className={style.placeforemail} type="text" />
 
                     </div>
                 </form>

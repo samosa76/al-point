@@ -4,15 +4,13 @@ import Home from "./Pages/Home";
 import Reward from "./Pages/Reward";
 import Signin from "./Pages/Signin";
 import Signup from "./Pages/Signup";
-import HomeAdmin from "./Admin/Component/HomeAdmin/HomeAdmin";
-import Classpage from "./Component/Classpage/Classpage";
-import ListSantri from "./Component/ListSantri/ListSantri"
 import List from "./Pages/List";
-import Listreward from "./Component/ListReward/Listreward";
 import Admin from "./Admin/Component/Pages/Admin";
 import InputSiswa from "./Admin/Component/InputSiswa/InputSiswa";
 import InputReward from "./Admin/Component/InputReward/InputReward";
 import InputPelanggaran from "./Admin/Component/InputPelanggaran/InputPelanggaran";
+import ListSantri from "./Admin/Component/ListSantri/ListSantri";
+import Listreward from "./Component/ListReward/Listreward";
 import Listviolation from "./Component/ListViolation/Listviolation";
 import Violation from "./Pages/Violation";
 
@@ -26,7 +24,6 @@ function App() {
           <Route path="/sign-up" element={<Signup />}></Route>
           <Route path="/reward" element={<Reward />}></Route>
           <Route path="/Violation" element={<Violation />}></Route>
-          <Route path="/Admin" element={<HomeAdmin />}></Route>
           <Route path="/Classpage" element={<Classpage />}></Route>
           <Route path="/ListSantri" element={<ListSantri />}></Route>
           <Route path="/Admin" element={<Admin />}></Route>
@@ -35,8 +32,6 @@ function App() {
           <Route path="/Inputsiswa" element={<InputSiswa />}></Route>
           <Route path="/Inputreward" element={<InputReward />}></Route>
           <Route path="/Inputpelanggaran" element={<InputPelanggaran />}></Route>
-          <Route path="/Listsantri" element={<ListSantri />}></Route>
-          <Route path="/list-reward" element={<Listreward/>}></Route>
           <Route path="/List-violation" element={<Listviolation/>}></Route>
         </Routes>
       </Layout>
