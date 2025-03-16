@@ -1,7 +1,6 @@
 .container {
     background-color: #003049;
     height: 150px;
-    margin-top: 2%;
 }
 
 .footer_title {
@@ -66,7 +65,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .container {
         height: 106px;
     }
