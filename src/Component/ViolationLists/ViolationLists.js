@@ -10,7 +10,7 @@ function ViolationLists() {
                     <p>1</p>
                 </div>
 
-                <div className={`${style.reward} ${style.btn_text}`}>
+                <div className={`${style.violation} ${style.btn_text}`}>
                     <p>Merokok</p>
                 </div>
 

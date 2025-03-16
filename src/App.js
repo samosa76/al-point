@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./Component/Layout/Layout";
 import Home from "./Pages/Home";
-import Violation from "./Pages/Violation";
 import Reward from "./Pages/Reward";
 import Signin from "./Pages/Signin";
 import Signup from "./Pages/Signup";
@@ -15,6 +14,7 @@ import InputSiswa from "./Admin/Component/InputSiswa/InputSiswa";
 import InputReward from "./Admin/Component/InputReward/InputReward";
 import InputPelanggaran from "./Admin/Component/InputPelanggaran/InputPelanggaran";
 import Listviolation from "./Component/ListViolation/Listviolation";
+import Violation from "./Pages/Violation";
 
 function App() {
   return (
@@ -24,8 +24,8 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/sign-in" element={<Signin />}></Route>
           <Route path="/sign-up" element={<Signup />}></Route>
-          <Route path="/violation" element={<Violation />}></Route>
           <Route path="/reward" element={<Reward />}></Route>
+          <Route path="/Violation" element={<Violation />}></Route>
           <Route path="/Admin" element={<HomeAdmin />}></Route>
           <Route path="/Classpage" element={<Classpage />}></Route>
           <Route path="/ListSantri" element={<ListSantri />}></Route>

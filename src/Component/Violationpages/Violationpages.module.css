@@ -1,0 +1,12 @@
+.container {
+    background-color: #f7800073;
+    height: 890px;
+    width: 980px;
+}
+
+.photo {
+    background-color: white;
+    height: 350px;
+    width: 350px;
+    border-radius: 350px;
+}
