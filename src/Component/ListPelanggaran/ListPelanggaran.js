@@ -1,7 +1,7 @@
 import ViolationLists from '../ViolationLists/ViolationLists';
-import style from './Listviolation.module.css'
+import style from './ListPelanggaran.module.css'
 
-function Listviolation() {
+function ListPelanggaran() {
     return (
         <div className={style.container_Listviolation}>
 
@@ -30,4 +30,4 @@ function Listviolation() {
 
 }
 
-export default Listviolation;
+export default ListPelanggaran;

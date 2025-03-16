@@ -11,8 +11,9 @@ import InputReward from "./Admin/Component/InputReward/InputReward";
 import InputPelanggaran from "./Admin/Component/InputPelanggaran/InputPelanggaran";
 import ListSantri from "./Admin/Component/ListSantri/ListSantri";
 import Listreward from "./Component/ListReward/Listreward";
-import Listviolation from "./Component/ListViolation/Listviolation";
 import Violation from "./Pages/Violation";
+import Classpage from "./Component/Classpage/Classpage";
+import ListPelanggaran from "./Component/ListPelanggaran/ListPelanggaran";
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
           <Route path="/Inputsiswa" element={<InputSiswa />}></Route>
           <Route path="/Inputreward" element={<InputReward />}></Route>
           <Route path="/Inputpelanggaran" element={<InputPelanggaran />}></Route>
-          <Route path="/List-violation" element={<Listviolation/>}></Route>
+          <Route path="/List-violation" element={<ListPelanggaran />}></Route>
         </Routes>
       </Layout>
     </div>
