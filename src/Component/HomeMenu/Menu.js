@@ -33,7 +33,7 @@ function Menu() {
                     <h1>Tentang Kami</h1>
                     <p>Kami merancang website untuk menciptakan lingkungan kepemondokan <br /> yang lebih disiplin, adil, dan termotivasi .Kami percaya bahwa sistem reward <br />dan pencatatan pelanggaran yang transparan dapat membantu meningkatkan <br />kedisiplinan serta memberikan apresiasi bagi mereka yang berprestasi.</p>
                 </div>
-                <img className={style.bacground_about_us} src='image/bachground/shapes.png' />
+                <img className={style.bacground_about_us} src='image/bachground/shapes.png' alt='image/shapes'/>
             </div>
 
         </div>

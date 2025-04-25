@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    gap: 5px;
+}
+
+.profile {
+    background-color: #f7800049;
+    height: 890px;
+    width: 980px;
+}

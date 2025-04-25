@@ -1,7 +1,9 @@
+import Violations from "../Component/Violation/Violations";
+
 function Violation() {
     return(
         <div>
-            <Violation />
+            <Violations />
         </div>
     );
 }

@@ -24,7 +24,6 @@
 }
 
 .img_title {
-
     img {
         height: 183px;
         width: 183px;
@@ -39,6 +38,7 @@
 }
 
 .desc_content {
+    border: 1px solid black;
     background-color: #D8EEF5;
     height: 507px;
     width: 820px;
@@ -98,4 +98,99 @@
     margin: auto;
     text-align: center;
     color: white;
+}
+
+@media (max-width: 1220px) {
+    .desc_content {
+        height: 490px;
+        width: 780px;
+    }
+
+    .name_title {
+        h1 {
+            font-size: 60px;
+        }
+    }
+
+    .img_title {
+        img {
+            height: 160px;
+            width: 160px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .siswa_title {
+        height: 300px;
+    }
+
+    .desc_content {
+        height: 380px;
+        width: 600px;
+    }
+
+    .name_title {
+        h1 {
+            font-size: 45px;
+        }
+    }
+
+    .img_title {
+        img {
+            height: 145px;
+            width: 145px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .siswa_title {
+        height: 218px;
+    }
+
+    .desc_content {
+        height: 343px;
+        width: 300px;
+    }
+
+    .name_title {
+        margin-left: 10px;
+
+        h1 {
+            font-size: 25px;
+        }
+    }
+
+    .img_title {
+        margin-left: 48px;
+
+        img {
+            height: 90px;
+            width: 90px;
+        }
+    }
+
+    .login_input_name {
+
+        font-size: 10px
+    }
+
+    .place_id {
+        height: 15px;
+        width: 150px;
+        margin-left: 50px;
+    }
+
+    .place_name {
+        height: 15px;
+        width: 150px;
+        margin-left: 32px;
+    }
+
+    .button {
+        height: 20px;
+        width: 70px;
+        border-radius: 5px;
+    }
 }
