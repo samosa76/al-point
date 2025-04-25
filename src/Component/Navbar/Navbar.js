@@ -6,7 +6,10 @@ function Navbar() {
         <div className={style.container_nav}>
 
             <div className={style.logo_nav}>
-                <h1>Al - Point</h1>
+                <Link to={'/'} className={style.nav_item}>
+                    <h1>Al - Point</h1>
+                </Link>
+
             </div>
             <div className={style.menu_nav}>
                 <ul>
