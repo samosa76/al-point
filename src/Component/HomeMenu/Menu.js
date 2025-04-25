@@ -1,7 +1,9 @@
 import style from './Menu.module.css'
 import { Link } from 'react-router-dom';
 
-function Menu() {
+function Menu(props) {
+    const {userId} = props;
+    var id = userId;
     return (
         <div className={`${style.container_home_menu}`}>
             <div className={style.menu_buttons}>
@@ -21,13 +23,14 @@ function Menu() {
                         <h2 className={style.text}>Data Santri</h2>
                     </Link>
 
-                    <Link to={'/Violation'} className={`${style.btn_menu} ${style.red} ${style.flex_center}`}>
+                    <Link to={`/Violation/${id}`} className={`${style.btn_menu} ${style.red} ${style.flex_center}`}>
                         <h2 className={style.text}>Violation</h2>
                     </Link>
                 </div>
 
 
             </div>
+
             <div className={style.about_us}>
                 <div className={`${style.menu_about_us} ${style.flex_center} ${style.text_center}`}>
                     <h1>Tentang Kami</h1>

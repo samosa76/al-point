@@ -24,7 +24,6 @@ function App() {
           <Route path="/sign-in" element={<Signin />}></Route>
           <Route path="/sign-up" element={<Signup />}></Route>
           <Route path="/reward" element={<Reward />}></Route>
-          <Route path="/Violation" element={<Violation />}></Route>
           <Route path="/Classpage" element={<Classpage />}></Route>
           <Route path="/ListSantri" element={<ListSantri />}></Route>
           <Route path="/Admin" element={<Admin />}></Route>
@@ -34,6 +33,7 @@ function App() {
           <Route path="/Inputreward" element={<InputReward />}></Route>
           <Route path="/Inputpelanggaran" element={<InputPelanggaran />}></Route>
           <Route path="/List-violation" element={<ListPelanggaran />}></Route>
+          <Route path="/Violation/:id" element={<Violation />}></Route>
         </Routes>
       </Layout>
     </div>
