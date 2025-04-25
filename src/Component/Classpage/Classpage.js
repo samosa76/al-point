@@ -6,8 +6,8 @@ function Classpage({ number }) {
         <div>
 
             <div className={style.text}>
-                <p>Data Santri</p>
-                <p>Ponpes Modern IT Multimedia Al Fatih</p>
+                <h3>Data Santri</h3>
+                <h5>Ponpes Modern IT Multimedia Al Fatih</h5>
             </div>
 
             <div className={style.container_opsi}>

@@ -1,6 +1,14 @@
+import { useState } from 'react';
 import style from './Login.module.css'
 
 function Login() {
+    const [test, setTest] = useState("Testing")
+    const [username, setUsername] = useState("")
+
+    const clickedButton = () => {
+        setTest(username)
+    }
+
     return (
         <div className={style.container}>
 
@@ -12,25 +20,25 @@ function Login() {
                     <div className={style.login_input_name}>
 
                         <div className={style.title}>
-                            <label for="Username">Username</label>
+                            <label for="Username">{test}</label>
                         </div>
 
-                        <input className={style.placeforname} type="text" />
+                        <input className={style.placeforname} type="text" onChange={event => setUsername(event.target.value)} value={username}/>
 
                     </div>
 
                     <div>
 
                         <div className={style.title}>
-                            <label for="e-mail">E-mail</label>
+                            <label for="e-mail">Password</label>
                         </div>
 
-                        <input className={style.placeforemail} type="text" />
+                        <input className={style.placeforemail} type="password" />
 
                     </div>
                 </form>
 
-                <button className={style.button}>
+                <button className={style.button} onClick={clickedButton}>
                     <p>Login</p>
                 </button>
 
