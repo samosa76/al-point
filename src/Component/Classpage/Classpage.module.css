@@ -1,3 +1,8 @@
+.container{
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
 .text {
     text-align: center;
     font-weight: bold;
@@ -17,7 +22,7 @@
 .opsies {
     display: flex;
     margin-top: -50px;
-    gap: 80px;
+    gap: 40px;
 }
 
 @media (max-width: 1220px) {

@@ -14,6 +14,7 @@ import Listreward from "./Component/ListReward/Listreward";
 import Violation from "./Pages/Violation";
 import Classpage from "./Component/Classpage/Classpage";
 import ListPelanggaran from "./Component/ListPelanggaran/ListPelanggaran";
+import ListSiswa from "./Pages/ListSiswa";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
           <Route path="/sign-up" element={<Signup />}></Route>
           <Route path="/reward" element={<Reward />}></Route>
           <Route path="/Classpage" element={<Classpage />}></Route>
-          <Route path="/ListSantri" element={<ListSantri />}></Route>
+          <Route path="/Admin/ListSantri" element={<ListSantri />}></Route>
           <Route path="/Admin" element={<Admin />}></Route>
           <Route path="/List" element={<List />}></Route>
           <Route path="/Listreward" element={<Listreward/>}></Route>
@@ -34,6 +35,7 @@ function App() {
           <Route path="/Inputpelanggaran" element={<InputPelanggaran />}></Route>
           <Route path="/List-violation" element={<ListPelanggaran />}></Route>
           <Route path="/Violation/:id" element={<Violation />}></Route>
+          <Route path="/list-siswa/:kelas" element={<ListSiswa />}></Route>
         </Routes>
       </Layout>
     </div>

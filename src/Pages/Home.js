@@ -1,16 +1,16 @@
-import { use, useEffect, useState } from "react";
+// import { use, useEffect, useState } from "react";
 import Menu from "../Component/HomeMenu/Menu";
-import Axios from "axios";
+// import Axios from "axios";
 function Home() {
-    const [users, setUsers] = useState([]);
+    // const [users, setUsers] = useState([]);
 
 
-    useEffect(() => {
-        Axios.get("https://api.italfatih.my.id/api_users").then((res) => {
-            const userData = res.data[0].playload;
-            setUsers(userData);
-        })
-    }, [])
+    // useEffect(() => {
+    //     Axios.get("https://api.italfatih.my.id/api_users").then((res) => {
+    //         const userData = res.data[0].playload;
+    //         setUsers(userData);
+    //     })
+    // }, [])
 
 
 
