@@ -1,4 +1,3 @@
-import RewardsContents from '../RewardContents/RewardContents';
 import style from './Rewardpages.module.css';
 
 function Rewardspages() {
@@ -7,11 +6,11 @@ function Rewardspages() {
         <div className={style.container_Reward}>
             <div className={style.pages}>
                 <div className={style.page}>
-                <div className={style.photoSantri}>
+                    <div className={style.photoSantri}>
                         <img src='/image/PhotoSantri/Jibran.jpg' alt='image/jibran'></img>
                     </div>
                     <div className={style.ellipses}>
-                    
+
                         <div className={style.ellipse}></div>
 
                         <div className={style.ellipse2}>
@@ -46,8 +45,32 @@ function Rewardspages() {
                             <p>: Tasikmalaya</p>
                         </div>
 
-                        <RewardsContents />
-                        
+                        {/* Table */}
+                        <div className={style.container_RewardContents}>
+                            <div className={style.title}>
+                                <h2>Reward</h2>
+                                <hr />
+                            </div>
+                            <div className={style.RewardsContents}>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Reward</th>
+                                            <th>Point</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Penghargaan bagi santri yang rajin</td>
+                                            <td>50</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
                     </div>
 
 
