@@ -1,6 +1,7 @@
 import style from './Footer.module.css'
 
 function Footer() {
+    const imagePath = `${process.env.PUBLIC_URL}/image/icon/`;
     return (
         <div className={style.container}>
 
@@ -24,9 +25,9 @@ function Footer() {
             <div className={style.sosmed}>
 
                 <div className={style.icons}>
-                    <img className={style.fb} src='image/icon/fb.png' alt='icon-fb'/>
-                    <img src='image/icon/ig.png' alt='icon-ig'/>
-                    <img src='image/icon/wa.png' alt='icon-wa'/>
+                    <img className={style.fb} src={`${imagePath}/fb.png`} alt='icon-fb'/>
+                    <img src={`${imagePath}/ig.png`} alt='icon-ig'/>
+                    <img src={`${imagePath}/wa.png`} alt='icon-wa'/>
                 </div>
 
                 <div className={style.title2}>

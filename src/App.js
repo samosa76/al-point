@@ -10,11 +10,10 @@ import InputSiswa from "./Admin/Component/InputSiswa/InputSiswa";
 import InputReward from "./Admin/Component/InputReward/InputReward";
 import InputPelanggaran from "./Admin/Component/InputPelanggaran/InputPelanggaran";
 import ListSantri from "./Admin/Component/ListSantri/ListSantri";
-import Listreward from "./Component/ListReward/Listreward";
 import Violation from "./Pages/Violation";
 import Classpage from "./Component/Classpage/Classpage";
-import ListPelanggaran from "./Component/ListPelanggaran/ListPelanggaran";
 import ListSiswa from "./Pages/ListSiswa";
+import ListRewardAndViolation from "./Component/ListRewardAndViolation/ListRewardAndViolation";
 
 function App() {
   return (
@@ -29,13 +28,12 @@ function App() {
           <Route path="/Admin/ListSantri" element={<ListSantri />}></Route>
           <Route path="/Admin" element={<Admin />}></Route>
           <Route path="/List" element={<List />}></Route>
-          <Route path="/Listreward" element={<Listreward/>}></Route>
           <Route path="/Inputsiswa" element={<InputSiswa />}></Route>
           <Route path="/Inputreward" element={<InputReward />}></Route>
           <Route path="/Inputpelanggaran" element={<InputPelanggaran />}></Route>
-          <Route path="/List-violation" element={<ListPelanggaran />}></Route>
           <Route path="/Violation/:id" element={<Violation />}></Route>
           <Route path="/list-siswa/:kelas" element={<ListSiswa />}></Route>
+          <Route path="/list-detail/:kategori" element={<ListRewardAndViolation />}></Route>
         </Routes>
       </Layout>
     </div>

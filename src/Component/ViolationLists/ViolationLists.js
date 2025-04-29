@@ -1,17 +1,17 @@
 import style from './ViolationLists.module.css';
 
-function ViolationLists() {
+function ViolationLists({ pelanggaran, index}) {
     return (
         <div className={style.container}>
 
             <div className={style.list}>
 
                 <div className={`${style.number} ${style.btn_text}`}>
-                    <p>1</p>
+                    <p>{index}</p>
                 </div>
 
                 <div className={`${style.violation} ${style.btn_text}`}>
-                    <p>Merokok</p>
+                    <p>{pelanggaran.name}</p>
                 </div>
 
                 <div className={style.div_hr}>
@@ -19,7 +19,7 @@ function ViolationLists() {
                 </div>
 
                 <div className={`${style.point} ${style.btn_text}`}>
-                    <p>100 Point</p>
+                    <p>{pelanggaran.score}</p>
                 </div>
 
             </div>
