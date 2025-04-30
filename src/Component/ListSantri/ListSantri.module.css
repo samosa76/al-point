@@ -1,40 +1,17 @@
-.title {
-    text-align: center;
-    font-weight: bold;
+table {
+    border-radius: 16px;
 }
 
-.table {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #003049;
-    height: 517px;
-    width: 437px;
-    border-radius: 10px;
+thead {
+    background-color: #658E9C;
 }
 
-.profil {
-    background-color: white;
-    height: 198px;
-    width: 198px;
-    border-radius: 198px;
-    margin-bottom: 32px;
+thead, tbody {
+    border-collapse: collapse;
 }
 
-.container_text {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 362px;
-    border-radius: 15px;
-}
-
-.text {
-    display: flex;
-}
-
-.text_title {
-    width: 80px;
-    margin-left: 16px;;
-}
+thead>tr>th, tbody>tr>td {
+    padding: 24px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}   
