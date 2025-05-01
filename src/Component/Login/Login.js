@@ -46,7 +46,7 @@ function Login() {
 
         if (user) {
             console.log("Login successful");
-            navigate('/admin');
+            navigate(`/admin/${user.id}`);
         } else {
             setError(true);
         }

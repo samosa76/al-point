@@ -26,7 +26,6 @@ function App() {
           <Route path="/reward" element={<Reward />}></Route>
           <Route path="/Classpage" element={<Classpage />}></Route>
           <Route path="/Admin/ListSantri" element={<ListSantri />}></Route>
-          <Route path="/Admin" element={<Admin />}></Route>
           <Route path="/List" element={<List />}></Route>
           <Route path="/Inputsiswa" element={<InputSiswa />}></Route>
           <Route path="/Inputreward" element={<InputReward />}></Route>
@@ -34,6 +33,7 @@ function App() {
           <Route path="/Violation/:id" element={<Violation />}></Route>
           <Route path="/list-siswa/:kelas" element={<ListSiswa />}></Route>
           <Route path="/list-detail/:kategori" element={<ListRewardAndViolation />}></Route>
+          <Route path="/Admin/:id_user" element={<Admin />}></Route>
         </Routes>
       </Layout>
     </div>
