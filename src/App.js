@@ -30,7 +30,7 @@ function App() {
           <Route path="/List" element={<List />}></Route>
           <Route path="/Inputsiswa" element={<InputSiswa />}></Route>
           <Route path="/Inputreward" element={<InputReward />}></Route>
-          <Route path="/Inputpelanggaran" element={<InputPelanggaran />}></Route>
+          <Route path="/input-pelanggaran" element={<InputPelanggaran />}></Route>
           <Route path="/Violation/:id" element={<Violation />}></Route>
           <Route path="/list-siswa/:kelas" element={<ListSiswa />}></Route>
           <Route path="/list-detail/:kategori" element={<ListRewardAndViolation />}></Route>
