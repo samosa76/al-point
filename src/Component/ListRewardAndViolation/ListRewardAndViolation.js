@@ -10,7 +10,7 @@ function ListRewardAndViolation() {
     useEffect(() => {
         axios.get(`http://localhost:8000/api_ket_${kategori}`)
         .then((response) => {
-            const data = response.data[0].playload;
+            const data = response.data.payload;
             console.log(data);
             
             SetPelanggaran(data);

@@ -1,8 +1,23 @@
+import { data } from "react-router-dom";
 import style from "./InputPelanggaran.module.css";
+import { use, useEffect } from "react";
 
 function InputPelanggaran() {
 
+    /* 
+    Make sure to get api from /api_reward 
+    */
+    function fetchData() {
+        fetch("http://localhost:8000/api_pelanggaran")
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+            })
+    }
 
+    useEffect(() => {
+        fetchData();
+    }, [])
 
     return (
         <div className={style.inputPelanggaran_container}>

@@ -18,7 +18,7 @@ function RewardsContents() {
         // }
         function fetchSiswa() {
             Axios.get(`http://localhost:8000/api_siswa`).then((res) => {
-                const data = res.data[0].playload;
+                const data = res.data.payload;
                 console.log(data);
                 setSiswa(data);
             })
