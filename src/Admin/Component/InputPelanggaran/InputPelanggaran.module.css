@@ -63,32 +63,15 @@
     margin-top: 8%;
 }
 
-.place_id {
-    height: 25px;
-    width: 250px;
-    border-radius: 5px;
-    margin-left: 160px;
+.input_label {
+    font-size: 20px;
+    width: 110px;
 }
 
-.place_name {
-    height: 25px;
-    width: 250px;
-    border-radius: 5px;
-    margin-left: 132px;
-}
-
-.place_pelanggaran {
-    height: 25px;
-    width: 250px;
-    border-radius: 5px;
-    margin-left: 87px;
-}
-
-.place_date {
-    height: 25px;
-    width: 250px;
-    border-radius: 5px;
-    margin-left: 141px;
+.input_box{
+    margin-left: 32px;
+    height: 30px;
+    width: 200px;
 }
 
 .button {
