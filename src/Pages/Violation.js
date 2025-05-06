@@ -7,16 +7,19 @@ function Violation() {
 
     if (id === "undefined") {
         return <Navigate to={`/sign-in`} />
-
     }
     else {
         return (
             <div>
-                <p>{id}</p>
-                <Violations />
+                <Violations idName={id}/>
             </div>
         );
     }
+    // return (
+    //     <div>
+    //         <Violations />
+    //     </div>
+    // );
 }
 
 export default Violation;

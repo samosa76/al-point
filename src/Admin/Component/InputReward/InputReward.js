@@ -118,7 +118,7 @@ function InputReward() {
             <div className={style.reward_title}>
 
                 <div className={style.img_title}>
-                    <img src='image/admin/reward_img.png' />
+                    <img src='image/admin/reward_img.png' alt="reward_img.png"/>
                 </div>
 
                 <div className={style.name_title}>

@@ -1,6 +1,7 @@
 import style from './Violationpages.module.css'
 
-function Violationpages() {
+function Violationpages({ student }) {
+    const {nama, kelas, nis} = student
     return (
         <div className={style.container}>
             <div className={style.profile}>
@@ -12,25 +13,19 @@ function Violationpages() {
                         <div className={style.text_title}>
                             <p>Nama</p>
                         </div>
-                        <p>: Jibran Amranulhaq</p>
+                        <p>: {nama}</p>
                     </div>
                     <div className={style.text}>
                         <div className={style.text_title}>
                             <p>Kelas</p>
                         </div>
-                        <p>: IV</p>
+                        <p>: {kelas}</p>
                     </div>
                     <div className={style.text}>
                         <div className={style.text_title}>
-                            <p>Tanggal Lahir</p>
+                            <p>NIS</p>
                         </div>
-                        <p>: 7 januari 2008</p>
-                    </div>
-                    <div className={style.text}>
-                        <div className={style.text_title}>
-                            <p>Alamat</p>
-                        </div>
-                        <p>: Tasikmalaya</p>
+                        <p>: {nis}</p>
                     </div>
                 </div>
             </div>

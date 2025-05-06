@@ -8,21 +8,16 @@ function RewardsContents() {
     // const [reward, setReward] = useState([]);
     const [siswa, setSiswa] = useState([]);
 
+    function fetchSiswa() {
+        Axios.get(`http://localhost:8000/api_siswa`).then((res) => {
+            const data = res.data.payload;
+            console.log(data);
+            setSiswa(data);
+        })
+    }
+
     useEffect(() => {
-        // function fetchReward() {
-        //     Axios.get("http://localhost:8000/api_selectRewardByIdSiswa/?id_name=2").then((res) => {
-        //         const data = res.data[0].playload;
-        //         console.log(data);
-        //         setReward(data);
-        //     })
-        // }
-        function fetchSiswa() {
-            Axios.get(`http://localhost:8000/api_siswa`).then((res) => {
-                const data = res.data.payload;
-                console.log(data);
-                setSiswa(data);
-            })
-        }
+        
 
         fetchSiswa();
         // fetchReward();
@@ -30,14 +25,6 @@ function RewardsContents() {
     return (
 
         <div className={style.container_RewardContents}>
-            {/* <div>
-                {siswa.map((siswa) => (
-
-                    <li key={siswa.id}>
-                        {siswa.nama} (Kelas: {siswa.kelas})
-                    </li>
-                ))}
-            </div> */}
             <Rewards students={siswa}/>
             <Rewardspages />
         </div>
