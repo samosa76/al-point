@@ -23,7 +23,7 @@ function Menu(props) {
                         <h2 className={style.text}>Data Santri</h2>
                     </Link>
 
-                    <Link to={`/Violation/${id}`} className={`${style.btn_menu} ${style.red} ${style.flex_center}`}>
+                    <Link to={`/auth`} className={`${style.btn_menu} ${style.red} ${style.flex_center}`}>
                         <h2 className={style.text}>Violation</h2>
                     </Link>
                 </div>

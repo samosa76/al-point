@@ -1,17 +1,14 @@
 import { useState } from 'react';
 import style from './Login.module.css'
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
 
-function Login() {
-
+function Login(props) {
+    const { setUser, setRole } = props;
     // const fetchData = async () => {
     //     axios.get('http://localhost:8000/api_users').then((response) => {
     //         console.log(response.data.payload);
     //     })
     // }
-
-    const navigate = useNavigate()
     const [error, setError] = useState(false);
 
     const [formData, setFormData] = useState({
@@ -35,18 +32,12 @@ function Login() {
         e.preventDefault();
         const response = await axios.get('http://localhost:8000/api_users');
         const users = response.data.payload;
-        // for (let index = 0; index < users.length; index++) {
-        //     const user = users[index];
-        //     console.log(user.name);
 
-        // }
         const user = users.find(user => user.name === username && user.password === password);
 
-        console.log(`Login with username: ${username} and password: ${password}`);
-
         if (user) {
-            console.log("Login successful");
-            navigate(`/admin/${user.id}`);
+            setUser(user);
+            setRole(user.id_posisi)
         } else {
             setError(true);
         }
@@ -79,13 +70,15 @@ function Login() {
                         <input className={style.placeforemail} type="password" onChange={handleChange} value={password} name='password' />
 
                     </div>
+
+                    {error ? <div><p className={style.error_text}>Wrong!! Do it again</p></div> : <div className={style.error_text_box}><p>Error Message</p></div>}
+
+                    <button className={style.button} onClick={handleClick}>
+                        <p>Login</p>
+                    </button>
                 </form>
 
-                {error ? <div><p className={style.error_text}>Wrong!! Do it again</p></div> :  <div className={style.error_text_box}><p>Error Message</p></div>}
 
-                <button className={style.button} onClick={handleClick}>
-                    <p>Login</p>
-                </button>
 
             </div>
 

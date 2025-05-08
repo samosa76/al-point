@@ -1,25 +1,13 @@
-import { Navigate, useParams } from "react-router-dom";
 import Violations from "../Component/Violation/Violations";
 // import Login from "../Component/Login/Login";
 
-function Violation() {
-    const { id } = useParams();
-
-    if (id === "undefined") {
-        return <Navigate to={`/sign-in`} />
-    }
-    else {
-        return (
-            <div>
-                <Violations idName={id}/>
-            </div>
-        );
-    }
-    // return (
-    //     <div>
-    //         <Violations />
-    //     </div>
-    // );
+function Violation(props) {
+    const {user} = props;
+    return (
+        <div>
+            <Violations user={user}/>
+        </div>
+    );
 }
 
 export default Violation;

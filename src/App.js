@@ -14,6 +14,7 @@ import Violation from "./Pages/Violation";
 import Classpage from "./Component/Classpage/Classpage";
 import ListSiswa from "./Pages/ListSiswa";
 import ListRewardAndViolation from "./Component/ListRewardAndViolation/ListRewardAndViolation";
+import Auth from "./Pages/Auth";
 
 function App() {
   return (
@@ -30,7 +31,9 @@ function App() {
           <Route path="/input-siswa" element={<InputSiswa />}></Route>
           <Route path="/input-reward" element={<InputReward />}></Route>
           <Route path="/input-pelanggaran" element={<InputPelanggaran />}></Route>
-          <Route path="/Violation/:id" element={<Violation />}></Route>
+          <Route path="/auth" element={<Auth />}></Route>
+          <Route path="/violation" element={<Violation />}></Route>
+          {/* <Route path="/Violation/:id" element={<Violation />}></Route> */}
           <Route path="/list-siswa/:kelas" element={<ListSiswa />}></Route>
           <Route path="/list-detail/:kategori" element={<ListRewardAndViolation />}></Route>
           <Route path="/Admin/:id_user" element={<Admin />}></Route>
