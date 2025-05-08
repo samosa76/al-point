@@ -1,6 +1,6 @@
 import style from './Reward.module.css';
 
-function Rewards({ students }) {
+function Rewards({ students, onStudentClick }) {
     return (
 
         <div className={style.container_Reward}>
@@ -8,7 +8,7 @@ function Rewards({ students }) {
 
                 <div>
                     {students.map((student) => (
-                        <div className={style.student}>
+                        <div className={style.student} onClick={() => onStudentClick(student)}>
 
                             <div className={style.photo}>
                                 <img src='/image/PhotoSantri/Jibran.jpg' alt='image/jibran'></img>

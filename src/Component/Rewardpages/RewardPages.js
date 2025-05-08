@@ -1,6 +1,19 @@
 import style from './Rewardpages.module.css';
+import TableReward from './TableReward/TableReward';
 
-function Rewardspages() {
+function Rewardspages({ student, reward }) {
+    const defaultStudent = { kelas: 'Default Class', nama: 'Student Number 1', nis: '12345' , id : "111"}
+    let kelas, nama, nis, id;
+
+    if (student) {
+        // If student is available, destructure from it
+        ({ kelas, nama, nis, id } = student); // Wrap in parentheses
+    } else {
+        // Otherwise, destructure from the default student
+        ({ kelas, nama, nis, id } = defaultStudent); // Wrap in parentheses
+    }
+
+
     return (
 
         <div className={style.container_Reward}>
@@ -24,52 +37,23 @@ function Rewardspages() {
                             <div className={style.text_title}>
                                 <p>Nama</p>
                             </div>
-                            <p>: Jibran Amranulhaq</p>
+                            <p>: {nama}</p>
                         </div>
                         <div className={style.text}>
                             <div className={style.text_title}>
                                 <p>Kelas</p>
                             </div>
-                            <p>: IV</p>
+                            <p>: {kelas}</p>
                         </div>
                         <div className={style.text}>
                             <div className={style.text_title}>
-                                <p>Tanggal Lahir</p>
+                                <p>NIS</p>
                             </div>
-                            <p>: 7 januari 2008</p>
-                        </div>
-                        <div className={style.text}>
-                            <div className={style.text_title}>
-                                <p>Alamat</p>
-                            </div>
-                            <p>: Tasikmalaya</p>
+                            <p>: {nis}</p>
                         </div>
 
                         {/* Table */}
-                        <div className={style.container_RewardContents}>
-                            <div className={style.title}>
-                                <h2>Reward</h2>
-                                <hr />
-                            </div>
-                            <div className={style.RewardsContents}>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>No</th>
-                                            <th>Reward</th>
-                                            <th>Point</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Penghargaan bagi santri yang rajin</td>
-                                            <td>50</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                        <TableReward reward={reward}/>
 
                     </div>
 
