@@ -71,12 +71,17 @@ function InputPelanggaran() {
     }
 
     function handleClick(e) {
-        addData();
+        if (!name || !pelanggaran) {
+            alert("Masukan seluruh data")
+            e.preventDefault();
+        }
+        else {
+            addData();
+            alert(`Data Berhasil di tambahkan`);
+        }
         // addData();
         // const filter = pelanggaranList.filter((item => item.kategori === ""))
-        // console.log(pelanggaranList);
-
-        alert(`Data Berhasil di tambahkan`);
+        // console.log(pelanggaranList);        
     }
 
     useEffect(() => {

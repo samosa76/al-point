@@ -24,7 +24,7 @@ function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link to={'/sign-in'} className={style.nav_item}>
+                        <Link to={'/auth'} className={style.nav_item}>
                             <h3>Login</h3>
                         </Link>
                     </li>

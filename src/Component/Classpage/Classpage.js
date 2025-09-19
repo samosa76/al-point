@@ -11,7 +11,7 @@ function Classpage({ number }) {
         <div className={style.container}>
 
             <div className={style.text}>
-                <h3>Data Santri</h3>
+                <h3>Data Siswa</h3>
                 <h5>Ponpes Modern IT Multimedia Al Fatih</h5>
             </div>
 

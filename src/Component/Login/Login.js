@@ -57,7 +57,13 @@ function Login(props) {
                             <label for="Username">Username</label>
                         </div>
 
-                        <input className={style.placeforname} type="text" onChange={handleChange} value={username} name='username' />
+                        <input
+                            className={style.placeforname}
+                            type="text"
+                            onChange={handleChange}
+                            value={username}
+                            name='username'
+                        />
 
                     </div>
 
@@ -67,11 +73,26 @@ function Login(props) {
                             <label for="e-mail">Password</label>
                         </div>
 
-                        <input className={style.placeforemail} type="password" onChange={handleChange} value={password} name='password' />
+                        <input
+                            className={style.placeforemail}
+                            type="password"
+                            onChange={handleChange}
+                            value={password}
+                            name='password'
+                        />
 
                     </div>
 
-                    {error ? <div><p className={style.error_text}>Wrong!! Do it again</p></div> : <div className={style.error_text_box}><p>Error Message</p></div>}
+                    {
+                        error ?
+                            <div>
+                                <p className={style.error_text}>Wrong!! Do it again</p>
+                            </div>
+                            :
+                            <div className={style.error_text_box}>
+                                <p>Error Message</p>
+                            </div>
+                    }
 
                     <button className={style.button} onClick={handleClick}>
                         <p>Login</p>

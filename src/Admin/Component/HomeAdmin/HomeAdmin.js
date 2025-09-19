@@ -26,7 +26,7 @@ function HomeAdmin() {
 
                 <div className={style.info}>
 
-                    <Link to="/" className={style.non_link_text}>
+                    {/* <Link to="/" className={style.non_link_text}>
                         <div className={style.admin_info}>
 
                             <div className={style.admin_img}></div>
@@ -47,28 +47,29 @@ function HomeAdmin() {
                             </div>
 
                         </div>
-                    </Link>
+                    </Link> */}
 
+                    <Link to="/input-reward" className={style.non_link_text}>
+                        <div className={style.admin_info}>
 
-                    <div className={style.admin_info}>
+                            <div className={style.admin_img}></div>
 
-                        <div className={style.admin_img}></div>
+                            <div className={style.admin_text}>
 
-                        <div className={style.admin_text}>
+                                <div className={style.desc_text}>
+                                    <img src={`${imagePath}/reward_img.png`} alt="reward_img.png" />
+                                    <p> Memberikan penghargaan untuk siswa yang berprestasi atau yang menunjukan perilaku yang baik sesuai dengan ketentuan</p>
+                                    <div className={style.button_text}>
+                                        <p>Input Reward</p>
+                                    </div>
 
-                            <div className={style.desc_text}>
-                                <img src={`${imagePath}/reward_img.png`} alt="reward_img.png" />
-                                <p> Lorem Ipsum is dummy text of the printing and
-                                    typesetting the industry's standard</p>
-                                <div className={style.button_text}>
-                                    <p>Input Reward</p>
                                 </div>
 
                             </div>
 
                         </div>
+                    </Link>
 
-                    </div>
 
                     <Link to="/input-pelanggaran" className={style.non_link_text}>
                         <div className={style.admin_info}>
@@ -79,9 +80,7 @@ function HomeAdmin() {
 
                                 <div className={style.desc_text}>
                                     <img src={`${imagePath}/image_pelanggaran.png`} alt="image_pelanggaran.png" />
-                                    <p> Lorem Ipsum is dummy text of the printing and
-                                        typesetting the industry's standard</p>
-
+                                    <p> Memberikan pelanggaran untuk siswa yang melakukan sebuah tindakan yang tidak sesuai dengan peraturan sekolah</p>
                                     <div className={style.button_text}>
                                         <p>Input Pelanggaran</p>
                                     </div>
@@ -93,7 +92,7 @@ function HomeAdmin() {
                         </div>
                     </Link>
 
-                    <div className={style.admin_info}>
+                    {/* <div className={style.admin_info}>
 
                         <div className={style.admin_img}></div>
 
@@ -111,7 +110,7 @@ function HomeAdmin() {
 
                         </div>
 
-                    </div>
+                    </div> */}
 
                 </div>
 

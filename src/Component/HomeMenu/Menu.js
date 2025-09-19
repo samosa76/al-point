@@ -20,7 +20,7 @@ function Menu(props) {
 
                 <div>
                     <Link to={'/Classpage'} className={`${style.btn_menu} ${style.primary_color} ${style.flex_center}`}>
-                        <h2 className={style.text}>Data Santri</h2>
+                        <h2 className={style.text}>Data Siswa</h2>
                     </Link>
 
                     <Link to={`/auth`} className={`${style.btn_menu} ${style.red} ${style.flex_center}`}>

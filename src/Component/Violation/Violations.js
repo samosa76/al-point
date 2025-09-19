@@ -8,6 +8,7 @@ function Violations(props) {
     const {user} = props;
     const [violation, setViolation] = useState([]);
     const [siswa, setSiswa] = useState([]);
+    const [totalPoint, setTotalPoint] = useState([]);
 
     useEffect(() => {
 
@@ -17,6 +18,7 @@ function Violations(props) {
                 const filteredData = data.filter((item) => item.id_name === parseInt(user.id_account));
                 console.log(filteredData);
                 setViolation(filteredData);
+                setTotalPoint(filteredData.reduce((acc, curr) => acc + curr.score, 0));
             })
         }
 
@@ -35,14 +37,13 @@ function Violations(props) {
     return (
         <div className={style.container}>
             <div className={style.profile}>
-                <Violationpages student={siswa} />
+                <Violationpages student={siswa} point={totalPoint}/>
             </div>
             <div className={style.Violations}>
-                <ViolationContent violation={violation} />
+                <ViolationContent violation={violation}/>
             </div>
         </div>
     )
-
 }
 
 export default Violations;

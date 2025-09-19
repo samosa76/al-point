@@ -95,7 +95,8 @@ function InputReward() {
 
     const handleClick = (e) => {
         if (grade === "" || siswa === "" || kategori === "" || reward === "") {
-            alert("Please fill all the fields");
+            alert("Masukan semua data");
+            e.preventDefault();
             return;
         } else {
             addData();

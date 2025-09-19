@@ -2,7 +2,6 @@ import style from './Reward.module.css';
 
 function Rewards({ students, onStudentClick }) {
     return (
-
         <div className={style.container_Reward}>
             <div className={style.students}>
 
