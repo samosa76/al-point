@@ -48,10 +48,17 @@
     margin: 16px;
 }
 
-.bar {
+/* Change bar to bar contianer for the outside bar */
+.bar_container {
     background-color: rgb(255, 255, 255);
     height: 20px;
     border-radius: 20px;
+}
+/* Adding bar progres width dynamic height base on total poin */
+.bar_progress {
+    background-color: red;
+    border-radius: 20px;
+    height: 100%;
 }
 
 .notes > h3 {

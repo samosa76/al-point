@@ -2,7 +2,9 @@ import style from './Violationpages.module.css'
 
 function Violationpages({ student, point }) {
     const {nama, kelas, nis} = student
-    const totalPoint = point || 0;
+    if (point > 100) {
+        point = 100
+    }
     return (
         <div className={style.container}>
             <div className={style.profile}>
@@ -37,7 +39,9 @@ function Violationpages({ student, point }) {
                 <div className={style.warning}>
                     <p>Total Point: {point}</p>
                 </div>
-                <div className={style.bar}></div>
+                <div className={style.bar_container}>
+                    <div className={style.bar_progress} style={{width:`${point}%`}}></div>
+                </div>
             </div>
 
             <div className={style.notes}>
