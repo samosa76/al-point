@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import style from './ViolationContent.module.css'
 
 function ViolationContent({ violation }) {

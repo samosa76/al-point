@@ -34,7 +34,7 @@ function InputPelanggaran() {
     }
 
     function getDataSiswa(grade) {
-        axios.get(`http://localhost:8000/selectSiswaByClasses/?kelas=${grade}`).then((res) => {
+        axios.get(`http://192.168.5.2:8000/selectSiswaByClasses/?kelas=${grade}`).then((res) => {
             const data = res.data.payload;
             setSiswa(data);
 
@@ -42,7 +42,7 @@ function InputPelanggaran() {
     }
 
     const getDataPelanggaran = async (kategori) => {
-        const response = await axios.get("http://localhost:8000/api_ket_pelanggaran");
+        const response = await axios.get("http://192.168.5.2:8000/api_ket_pelanggaran");
         const data = response.data.payload;
         const filteredData = data.filter((item) => item.kategori === parseInt(kategori));
         setPelanggaranList(filteredData);
@@ -50,7 +50,7 @@ function InputPelanggaran() {
     }
 
     const getKategoriPelanggaran = async () => {
-        const response = await axios.get("http://localhost:8000/api_kategori_pelanggaran");
+        const response = await axios.get("http://192.168.5.2:8000/api_kategori_pelanggaran");
         const data = response.data.payload;
         setKategoriPelanggaran(data);
         
@@ -60,7 +60,7 @@ function InputPelanggaran() {
     Make sure to get api from /api_reward 
     */
     function addData() {
-        axios.post("http://localhost:8000/api_pelanggaran",
+        axios.post("http://192.168.5.2:8000/api_pelanggaran",
             {
                 id_name: name,
                 id_pelanggaran: pelanggaran

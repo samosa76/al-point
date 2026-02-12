@@ -11,7 +11,7 @@ function Violationpages({ student, point }) {
             <div className={style.profile}>
 
                 <div className={style.photo}>
-                    <img src='/image/PhotoSantri/Jibran.jpg' alt='image/jibran'></img>
+                    <img src='./image/PhotoSantri/Jibran.jpg' alt='image/jibran'></img>
                     <div className={style.container_title}>
                         <div className={style.text}>
                             <div className={style.text_title}>
