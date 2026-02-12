@@ -9,7 +9,7 @@ function ListSiswa() {
 
     useEffect(() => {
         function fetchSiswa() {
-            Axios.get(`http://localhost:8000/selectSiswaByClasses/?kelas=${kelas}`).then((res) => {
+            Axios.get(`http://192.168.5.2:8000/selectSiswaByClasses/?kelas=${kelas}`).then((res) => {
                 const data = res.data.payload;
                 console.log(data);
                 setSiswa(data);

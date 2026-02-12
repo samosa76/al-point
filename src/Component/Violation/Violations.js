@@ -13,7 +13,7 @@ function Violations(props) {
     useEffect(() => {
 
         const getDataPelanggaran = () => {
-            axios.get(`http://localhost:8000/api_selectPelanggaranBySiswa`).then((res) => {
+            axios.get(`http://192.168.5.2:8000/api_selectPelanggaranBySiswa`).then((res) => {
                 const data = res.data.payload;
                 const filteredData = data.filter((item) => item.id_name === parseInt(user.id_account));
                 console.log(filteredData);
@@ -23,7 +23,7 @@ function Violations(props) {
         }
 
         const getDataSiswa = () => {
-            axios.get(`http://localhost:8000/api_siswa`).then((res) => {
+            axios.get(`http://192.168.5.2:8000/api_siswa`).then((res) => {
                 const data = res.data.payload;
                 const filteredData = data.find((item) => item.id === parseInt(user.id_account));
                 setSiswa(filteredData);

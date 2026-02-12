@@ -7,7 +7,7 @@ function ViolationContent({ violation }) {
         <div className={style.container}>
 
             <div className={style.title}>
-                <h3>Your violations</h3>
+                <h3>Your Violations</h3>
             </div>
             <hr />
             <div className={style.violationcontent}>

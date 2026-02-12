@@ -1,8 +1,12 @@
 .container {
     display: flex;
-    justify-content: space-between;
 }
 
 .profile {
+    width: 50%;
     background-color: #f7800049;
+}
+
+.Violations {
+    width: 50%;
 }

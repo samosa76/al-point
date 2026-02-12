@@ -20,7 +20,7 @@ function Rewardspages({ student, reward }) {
             <div className={style.pages}>
                 <div className={style.page}>
                     <div className={style.photoSantri}>
-                        <img src='/image/PhotoSantri/Jibran.jpg' alt='image/jibran'></img>
+                        <img src='./image/PhotoSantri/Jibran.jpg' alt='image/jibran'></img>
                     </div>
                     <div className={style.ellipses}>
 

@@ -10,7 +10,7 @@ function RewardsContents() {
     const [reward, setReward] = useState([]);
 
     function fetchReward(id_name) {
-        Axios.get(`http://localhost:8000/api_selectRewardBySiswa/?id_name=${id_name}`)
+        Axios.get(`http://192.168.5.2:8000/api_selectRewardBySiswa/?id_name=${id_name}`)
         .then((res) =>{
             const data = res.data.payload;
             setReward(data)
@@ -19,7 +19,7 @@ function RewardsContents() {
     }
 
     function fetchSiswa() {
-        Axios.get(`http://localhost:8000/api_siswa`).then((res) => {
+        Axios.get(`http://192.168.5.2:8000/api_siswa`).then((res) => {
             const data = res.data.payload;
             setSiswa(data);
         })
