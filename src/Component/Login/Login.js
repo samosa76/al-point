@@ -29,6 +29,30 @@ function Login(props) {
     }
 
     const handleClick = async (e) => {
+        // e.preventDefault();
+        // try {
+        //     const response = await axios.post("http://localhost:8000/login", {
+        //         username: username,
+        //         password: password
+        //     })
+
+        //     console.log(response.data);
+            
+
+        //     const { token, user } = response.data
+        //     if (token) {
+        //         localStorage.setItem('token', token);
+        //         setUser(user)
+        //         setRole(user.id_posisi);
+
+        //         console.log("Login Sukses");
+
+        //     }
+        // } catch (err) {
+        //     console.error("Login gagal:", err.response?.data?.message);
+        //     setError(true);
+        // }
+
         e.preventDefault();
         const response = await axios.get('http://localhost:8000/api_users');
         const users = response.data.payload;

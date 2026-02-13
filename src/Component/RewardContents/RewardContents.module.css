@@ -1,4 +1,15 @@
 .container_RewardContents {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.list_student {
+    height: 100vh;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.detail_student {
+    margin: 16px;
 }

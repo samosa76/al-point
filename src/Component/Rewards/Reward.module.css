@@ -1,23 +1,27 @@
-.container_Reward {
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-}
-
-.students {
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-
-}
-
 .student {
     background-color: #D8EEF5;
     height: 100px;
     width: 400px;
-    gap: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.student_name {
+    gap: 16px;
     display: flex;
     align-items: center;
+}
+
+.student_score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: white;
+    padding: 16px;
+    margin-right: 16px;
 }
 
 .photo>img {
@@ -36,6 +40,10 @@
     }
     img {
         opacity: 80%;
+    }
+    .student_score {
+        background-color: green;
+        color: white;
     }
 }
 
