@@ -8,7 +8,7 @@ function ListRewardAndViolation() {
     const {kategori} = useParams();
     const [pelanggaran, SetPelanggaran] = useState([]);
     useEffect(() => {
-        axios.get(`http://localhost:8000/api_ket_${kategori}`)
+        axios.get(`http://192.168.5.2:8000/api_ket_${kategori}`)
         .then((response) => {
             const data = response.data.payload;
             console.log(data);

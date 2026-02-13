@@ -11,13 +11,12 @@ function Rewards({ students, onStudentClick }) {
                 <div>
                     {students.map((student) => (
                         <div className={style.student} onClick={() => onStudentClick(student)}>
-                            <div className={style.student_name}>
-                                <div className={style.photo}>
-                                    <img src='/image/PhotoSantri/Jibran.jpg' alt='image/jibran'></img>
-                                </div>
-                                <div className={style.name}>
-                                    <p>{student.nama.split(" ")[0] + " " + student.nama.split(" ")[1]}</p>
-                                </div>
+
+                            <div className={style.photo}>
+                                <img src='./image/PhotoSantri/Jibran.jpg' alt='image/jibran'></img>
+                            </div>
+                            <div className={style.name}>
+                                <p>{student.nama}</p>
                             </div>
 
                             <div className={style.student_score}>

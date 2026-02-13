@@ -54,7 +54,7 @@ function Login(props) {
         // }
 
         e.preventDefault();
-        const response = await axios.get('http://localhost:8000/api_users');
+        const response = await axios.get('http://192.168.5.2:8000/api_users');
         const users = response.data.payload;
 
         const user = users.find(user => user.name === username && user.password === password);
